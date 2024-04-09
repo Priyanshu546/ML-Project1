@@ -10,4 +10,15 @@ from sklearn import preprocessing
 import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
 import seaborn as sns
+#Loading the Dataset
+# dataset
+disease_df = pd.read_csv("framingham.csv")
+disease_df.drop(['education'], inplace = True, axis = 1)
+disease_df.rename(columns ={'male':'Sex_male'}, inplace = True)
+#Handling Missing Values
+# removing NaN / NULL values
+disease_df.dropna(axis = 0, inplace = True)
+print(disease_df.head(), disease_df.shape)
+print(disease_df.TenYearCHD.value_counts())
+
 
