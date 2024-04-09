@@ -1,5 +1,5 @@
 # ML-Project1
-#Heart Disease Prediction Using Logistic Regression
+Heart Disease Prediction Using Logistic Regression
 import pandas as pd
 import pylab as pl
 import numpy as np
